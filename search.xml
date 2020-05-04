@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>（一）Hexo-初识Hexo</title>
-    <url>/2020/05/03/%EF%BC%88%E4%B8%80%EF%BC%89Hexo-%E5%88%9D%E8%AF%86Hexo/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
-<div class="note info">
-            <p>前言：博主2020届毕业生，疫情影响，只能在家学习。为了能更好巩固，想自己搭建一个博客，分享技术学习笔记。最终选择了Hexo。搭建的过程很简单，主要参照的是B站的up主<a href="https://space.bilibili.com/384068749?from=search&seid=17449440460659345442" target="_blank" rel="noopener">CodeSheep</a> 的<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">视频教程</a> 。up是保研华科的大佬，他分享了许多技术内容，非常值得关注。</p>
-          </div>
-
-
-<h2 id="搭建过程简述"><a href="#搭建过程简述" class="headerlink" title="搭建过程简述"></a>搭建过程简述</h2><ol>
-<li>注册GitHub</li>
-<li>创建存储博客文件的仓库</li>
-<li>安装Node环境</li>
-<li>安装Git工具</li>
-<li>使用npm安装hexo-cli工具</li>
-<li>利用hexo命令进行博客初始化</li>
-<li>本地预览</li>
-<li>利用Git工具推送到GitHub仓库</li>
-<li>访问博客（你的博客仓库域名）</li>
-</ol>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
-<li>书写博客采用的markdown语法，相关语法教程<a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟markdown教程</a> </li>
-<li>Hexo主题可以自行设置，一是在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo主题官网</a> ，二是在百度搜索主题。</li>
-<li>这里我推荐几个比较优美的主题以及以及链接（点击相应的主题名称即可跳转）：<br>&emsp;&emsp; 1.<a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">Sakura</a> 非常炫，缺点加载慢。<br>&emsp;&emsp; 2.<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Matery</a> 预加载。<br>&emsp;&emsp; 3.<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 三段式，适合博文多的 。<br>&emsp;&emsp; 4.<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a>也是个好看的。<br>&emsp;&emsp; 5.<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next</a> 功能集成多，简洁(目前用户使用量最多)。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>（二）Hexo-音乐插件使用</title>
     <url>/2020/05/03/%EF%BC%88%E4%BA%8C%EF%BC%89Hexo-%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info">
@@ -81,6 +48,39 @@
       <tags>
         <tag>Hexo</tag>
         <tag>音乐插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>（一）Hexo-初识Hexo</title>
+    <url>/2020/05/03/%EF%BC%88%E4%B8%80%EF%BC%89Hexo-%E5%88%9D%E8%AF%86Hexo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr>
+<div class="note info">
+            <p>前言：博主2020届毕业生，疫情影响，只能在家学习。为了能更好巩固，想自己搭建一个博客，分享技术学习笔记。最终选择了Hexo。搭建的过程很简单，主要参照的是B站的up主<a href="https://space.bilibili.com/384068749?from=search&seid=17449440460659345442" target="_blank" rel="noopener">CodeSheep</a> 的<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">视频教程</a> 。up是保研华科的大佬，他分享了许多技术内容，非常值得关注。</p>
+          </div>
+
+
+<h2 id="搭建过程简述"><a href="#搭建过程简述" class="headerlink" title="搭建过程简述"></a>搭建过程简述</h2><ol>
+<li>注册GitHub</li>
+<li>创建存储博客文件的仓库</li>
+<li>安装Node环境</li>
+<li>安装Git工具</li>
+<li>使用npm安装hexo-cli工具</li>
+<li>利用hexo命令进行博客初始化</li>
+<li>本地预览</li>
+<li>利用Git工具推送到GitHub仓库</li>
+<li>访问博客（你的博客仓库域名）</li>
+</ol>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li>书写博客采用的markdown语法，相关语法教程<a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟markdown教程</a> </li>
+<li>Hexo主题可以自行设置，一是在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo主题官网</a> ，二是在百度搜索主题。</li>
+<li>这里我推荐几个比较优美的主题以及以及链接（点击相应的主题名称即可跳转）：<br>&emsp;&emsp; 1.<a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">Sakura</a> 非常炫，缺点加载慢。<br>&emsp;&emsp; 2.<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Matery</a> 预加载。<br>&emsp;&emsp; 3.<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 三段式，适合博文多的 。<br>&emsp;&emsp; 4.<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a>也是个好看的。<br>&emsp;&emsp; 5.<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next</a> 功能集成多，简洁(目前用户使用量最多)。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>

@@ -77,7 +77,7 @@ hr {
   position: relative;
   margin: 2rem auto;
   width: calc(100% - 4px);
-  border: 2px dashed #d2ebfd;
+  border: 2px dashed #a3cce3;
 }
 hr:hover:before {
   left: calc(95% - 20px);
@@ -87,7 +87,7 @@ hr:before {
   top: -20px;
   left: 5%;
   z-index: 1;
-  color: #a4d8fa;
+  color: #479ac7;
   content: '\f0c4';
   font-style: normal;
   font-variant: normal;
@@ -125,7 +125,7 @@ table td {
   vertical-align: middle;
 }
 *::selection {
-  background: #00c4b6;
+  background: #008080;
   color: #f7f7f7;
 }
 #nav #site_title,
@@ -1497,7 +1497,7 @@ blockquote footer cite:before {
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
-  background: rgba(27,31,35,0.05);
+  background: #e9e7ef;
   color: #f47466;
   word-wrap: break-word;
   word-break: break-word;
@@ -2920,7 +2920,7 @@ blockquote footer cite:before {
 }
 .tag-cloud__title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .tag-cloud-tags {
   text-align: center;
@@ -3121,7 +3121,7 @@ blockquote footer cite:before {
 }
 .category-lists .category__title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .category-list a {
   color: #4c4948;
@@ -3237,7 +3237,7 @@ blockquote footer cite:before {
   cursor: pointer;
 }
 #pagination .page-number.current {
-  background: #00c4b6;
+  background: #008080;
   color: #fff;
   cursor: default;
 }
@@ -3983,15 +3983,15 @@ img {
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
-  border-right-color: #009d92;
-  background: #00c4b6;
+  border-right-color: #69b469;
+  background: #9c9;
   color: #fff;
 }
 #sidebar .sidebar-toc__progress {
   position: relative;
   margin-bottom: 0.3rem;
   padding-left: 0.6rem;
-  color: #00c4b6;
+  color: #9c9;
 }
 #sidebar .sidebar-toc__progress .progress-notice {
   margin-right: 0.4rem;
@@ -4003,7 +4003,7 @@ img {
 #sidebar .sidebar-toc__progress-bar {
   width: 0;
   height: 1px;
-  background: #00c4b6;
+  background: #9c9;
 }
 @media screen and (max-width: 1024px) {
   i#toggle-sidebar {
@@ -4901,22 +4901,21 @@ figure.gallery-group .gallery-group-name:after {
   position: fixed;
   top: 5rem;
   left: 50%;
-  z-index: 1001;
   display: none;
+  z-index: 1001;
+  height: 500px;
   margin-left: -15rem;
   padding: 1rem;
   width: 30rem;
   background: #f6f8fa;
-}
-.search-dialog hr {
-  margin: 1rem auto;
+  border-radius: 0.625rem;
 }
 .search-dialog span.search-close-button {
   position: absolute;
-  top: 0.8rem;
-  right: 1rem;
+  top: 1.3rem;
+  right: 1.5rem;
   color: #858585;
-  font-size: 1rem;
+  font-size: 0.65rem;
   line-height: 1;
   cursor: pointer;
   -webkit-transition: color 0.2s ease-in-out;
@@ -4931,7 +4930,8 @@ figure.gallery-group .gallery-group-name:after {
 .search-dialog__title {
   padding: 0 0 0.7rem;
   color: #008080;
-  font-size: 1rem;
+  font-size: 0.6rem;
+  text-align: center;
   line-height: 1;
 }
 .search-mask {
@@ -4955,6 +4955,7 @@ figure.gallery-group .gallery-group-name:after {
   .search-result-list {
     max-height: 75vh !important;
     padding-bottom: 2rem;
+    font-size: 0.6rem;
   }
 }
 #local-search {
@@ -4973,16 +4974,17 @@ figure.gallery-group .gallery-group-name:after {
   padding: 0.25rem 0.7rem;
   width: 100%;
   outline: none;
-  border: 2px solid #008080;
-  border-radius: 2rem;
+  border: none;
+  border-bottom: 1px solid #008080;
   background: #f6f8fa;
-  font-size: 14px;
+  font-size: 0.6rem;
   -webkit-appearance: none;
 }
 #local-search .local-search__hit-item {
   position: relative;
   padding-left: 1.3rem;
   line-height: 1.7;
+  font-size: 0.65rem;
 }
 #local-search .local-search__hit-item:hover:before {
   border-color: #9c9;
@@ -5015,6 +5017,7 @@ figure.gallery-group .gallery-group-name:after {
   color: #008080;
 }
 #local-search .local-search__hit-item .search-result {
+  height: 100px;
   margin: 0 0 0.4rem;
   word-break: break-all;
 }
@@ -5027,5 +5030,7 @@ figure.gallery-group .gallery-group-name:after {
 }
 #local-search .search-result-list {
   overflow-y: auto;
-  max-height: 10.5rem;
+  max-height: 500px;
+  margin-top: 0.625rem;
+  font-size: 0.6rem;
 }
