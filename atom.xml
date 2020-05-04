@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>桃李丨醉丶春风</title>
+  
+  <subtitle>just do it</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://promonkeyli.github.io/"/>
+  <updated>2020-05-04T10:41:34.896Z</updated>
+  <id>http://promonkeyli.github.io/</id>
+  
+  <author>
+    <name>Lee</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>（二）Hexo-音乐插件使用</title>
+    <link href="http://promonkeyli.github.io/2020/05/03/%EF%BC%88%E4%BA%8C%EF%BC%89Hexo-%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    <id>http://promonkeyli.github.io/2020/05/03/%EF%BC%88%E4%BA%8C%EF%BC%89Hexo-%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-05-03T13:38:51.000Z</published>
+    <updated>2020-05-04T10:41:34.896Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><div class="note info">            <p>前言：  Hexo支持许多插件，本篇文章主要介绍Hexo中的音乐插件的使用，很多主题都自带配置项，只需要在主题配置文件中进行简单地配即可。博主使用的主要是Aplayer ，当然也可以使用网易云歌单外链生成播放器，下面会对二者进行详细的说明</p>          </div><h2 id="配置过程简述"><a href="#配置过程简述" class="headerlink" title="配置过程简述"></a>配置过程简述</h2><h3 id="网易云外链"><a href="#网易云外链" class="headerlink" title="网易云外链"></a>网易云外链</h3><h4 id="单曲外链"><a href="#单曲外链" class="headerlink" title="单曲外链"></a>单曲外链</h4><p>&emsp;&emsp; 单曲外链得歌曲版权支持，选择版权支持的歌曲点击下方<strong>生成外链播放器</strong>即可弹出外链播放器的设置界面，一般设置都可自行设置，设置的样式会以iframe生成在下方。你可以自己将该代码写入到hexo new page “你的音乐展示界面”生成的index.md文件中，markdown支持html结构。</p><hr><img src="/" class="lazyload" data-src="/img/blogpic/hexo/2.png"  width="80%"  alt="单曲外链" align=center><hr><p>&emsp;&emsp;嵌套代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe frameborder&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; marginwidth&#x3D;&quot;0&quot; marginheight&#x3D;&quot;0&quot; width&#x3D;330 height&#x3D;86   </span><br><span class="line">src&#x3D;&quot;&#x2F;&#x2F;music.163.com&#x2F;outchain&#x2F;player?type&#x3D;2&amp;id&#x3D;1360802561&amp;auto&#x3D;1&amp;height&#x3D;66&quot;&gt;</span><br><span class="line">&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp; 嵌入后的效果如下图所示</p><hr><img src="/" class="lazyload" data-src="/img/blogpic/hexo/3.png"  width="60%"  alt="嵌入效果" align=center><hr><h4 id="歌单外链"><a href="#歌单外链" class="headerlink" title="歌单外链"></a>歌单外链</h4><p>&emsp;&emsp; 歌单外链必须每一首歌版权支持方可。选择版权支持的歌添加到你想外链的歌单中，然后将歌单分享（自己的歌单没有生成外链播放歌单的选项），然后找到自己分享的歌单，界面会显示下面的生成外链播放器的选项。</p><hr><img src="/" class="lazyload" data-src="/img/blogpic/hexo/6.png"  width="60%"  alt="歌单外链" align=center><hr><p>&emsp;&emsp; 后面与单曲外链的步骤一致，嵌入后的界面如下图所示</p><hr><img src="/" class="lazyload" data-src="/img/blogpic/hexo/7.png"  width="60%"  alt="外链效果" align=center><hr><h3 id="Aplayer-JS音乐插件"><a href="#Aplayer-JS音乐插件" class="headerlink" title="Aplayer JS音乐插件"></a>Aplayer JS音乐插件</h3><p>&emsp;&emsp; Aplayer的使用没有版权问题的限制，但是步骤相对繁琐一些。<br>&emsp;&emsp; 第一步： 使用该功能首先得安装hexo-tag-aplayer 插件，你可以参考<a href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md" target="_blank" rel="noopener">官方文档</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-tag-aplayer</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;第二步：<strong>站点配置文件(_config.yml)</strong>中开启meting模式（可以直接解析各大音乐平台的歌曲），添加以下代码在配置文件的最后：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">aplayer:</span><br><span class="line">  meting: true</span><br></pre></td></tr></table></figure><p>&emsp;&emsp; 第三步：复制歌单的id（访问歌单后浏览器导航栏里的id值，即你的歌单id）然后在你要用于音乐界面展示的index.md文件中加上如下代码（具体详细配置可以参考官方文档）：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% meting &quot;523845661&quot; &quot;netease&quot; &quot;playlist&quot; &quot;theme:#FF4081&quot;   </span><br><span class="line">&quot;mode:circulation&quot; &quot;mutex:true&quot; &quot;listmaxheight:340px&quot; &quot;preload:auto&quot; %&#125;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;效果如下</p><hr><img src="/" class="lazyload" data-src="/img/blogpic/hexo/8.png"  width="60%"  alt="Aplayer" align=center><hr>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://promonkeyli.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="http://promonkeyli.github.io/tags/Hexo/"/>
+    
+      <category term="音乐插件" scheme="http://promonkeyli.github.io/tags/%E9%9F%B3%E4%B9%90%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>（一）Hexo-初识Hexo</title>
+    <link href="http://promonkeyli.github.io/2020/05/03/%EF%BC%88%E4%B8%80%EF%BC%89Hexo-%E5%88%9D%E8%AF%86Hexo/"/>
+    <id>http://promonkeyli.github.io/2020/05/03/%EF%BC%88%E4%B8%80%EF%BC%89Hexo-%E5%88%9D%E8%AF%86Hexo/</id>
+    <published>2020-05-02T17:35:49.000Z</published>
+    <updated>2020-05-04T10:41:47.653Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><hr><div class="note info">            <p>前言：博主2020届毕业生，疫情影响，只能在家学习。为了能更好巩固，想自己搭建一个博客，分享技术学习笔记。最终选择了Hexo。搭建的过程很简单，主要参照的是B站的up主<a href="https://space.bilibili.com/384068749?from=search&seid=17449440460659345442" target="_blank" rel="noopener">CodeSheep</a> 的<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">视频教程</a> 。up是保研华科的大佬，他分享了许多技术内容，非常值得关注。</p>          </div><h2 id="搭建过程简述"><a href="#搭建过程简述" class="headerlink" title="搭建过程简述"></a>搭建过程简述</h2><ol><li>注册GitHub</li><li>创建存储博客文件的仓库</li><li>安装Node环境</li><li>安装Git工具</li><li>使用npm安装hexo-cli工具</li><li>利用hexo命令进行博客初始化</li><li>本地预览</li><li>利用Git工具推送到GitHub仓库</li><li>访问博客（你的博客仓库域名）</li></ol><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol><li>书写博客采用的markdown语法，相关语法教程<a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟markdown教程</a> </li><li>Hexo主题可以自行设置，一是在<a href="https://hexo.io/themes/" target="_blank" rel="noopener">Hexo主题官网</a> ，二是在百度搜索主题。</li><li>这里我推荐几个比较优美的主题以及以及链接（点击相应的主题名称即可跳转）：<br>&emsp;&emsp; 1.<a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" rel="noopener">Sakura</a> 非常炫，缺点加载慢。<br>&emsp;&emsp; 2.<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">Matery</a> 预加载。<br>&emsp;&emsp; 3.<a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 三段式，适合博文多的 。<br>&emsp;&emsp; 4.<a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener">Butterfly</a>也是个好看的。<br>&emsp;&emsp; 5.<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next</a> 功能集成多，简洁(目前用户使用量最多)。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="博客" scheme="http://promonkeyli.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="http://promonkeyli.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+</feed>
