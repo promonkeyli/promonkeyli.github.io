@@ -1,0 +1,27 @@
+# Allow to cache content generation.
+cache:
+  enable: true
+
+# style
+#scheme: Muse
+#scheme: Mist
+#scheme: Pisces
+scheme: Gemini
+darkmode: true
+
+#favicon
+#favicon:
+#  small: /images/favicon-16x16-next.png
+#  medium: /images/favicon-32x32-next.png
+#  apple_touch_icon: /images/apple-touch-icon-next.png
+#  safari_pinned_tab: /images/logo.svg
+#  android_manifest: /images/manifest.json
+
+#custom_logo: /uploads/custom-logo.jpg
+
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+
+menu_settings:
+  icons: true
