@@ -7,7 +7,7 @@ cache:
 #scheme: Mist
 #scheme: Pisces
 scheme: Gemini
-darkmode: true
+#darkmode: true
 
 #favicon
 #favicon:
@@ -36,7 +36,7 @@ avatar:
   rounded: true
   rotated: true
 
-site_state: true
+#site_state: true
 
 # social
 social:
