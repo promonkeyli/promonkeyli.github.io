@@ -23,7 +23,7 @@
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Young&#39;s Blog">
-<meta property="og:url" content="https://promonkeyli.top/index.html">
+<meta property="og:url" content="https://promonkeyli.top/tags/Git/index.html">
 <meta property="og:site_name" content="Young&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Young">
@@ -31,14 +31,14 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://promonkeyli.top/">
+<link rel="canonical" href="https://promonkeyli.top/tags/Git/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/Git/index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Young's Blog</title>
+<title>标签: Git | Young's Blog</title>
   
 
 
@@ -71,7 +71,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Young's Blog</h1>
+      <p class="site-title">Young's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -184,243 +184,50 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
-
-    
+    <div class="main-inner tag posts-collapse">
 
 
-<div class="post-block">
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://promonkeyli.top/2023/03/05/git/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Young">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Young's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Young's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/03/05/git/" class="post-title-link" itemprop="url">Git</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-03-05 10:00:21 / 修改时间：14:59:17" itemprop="dateCreated datePublished" datetime="2023-03-05T10:00:21+08:00">2023-03-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
-        </span>
-    </span>
-
   
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>879</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="Git本地操作"><a href="#Git本地操作" class="headerlink" title="Git本地操作"></a>Git本地操作</h3><ol>
-<li>用户信息配置(–global：当前机器所有仓库都会使用该配置，也可以对某一个仓库单独指定)<blockquote>
-<p>git config –global user.name “Your Name”<br>git config –global1 user.email “<a href="mailto:&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;">&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;</a>“</p>
-</blockquote>
-</li>
-<li>仓库初始化<blockquote>
-<p>git init</p>
-</blockquote>
-</li>
-<li>提交<blockquote>
-<p>git add file<br>git commit -m “message”</p>
-</blockquote>
-</li>
-<li>提交文件状态查看<blockquote>
-<p>git status</p>
-</blockquote>
-</li>
-<li>提交文件修改的内容<blockquote>
-<p>git diff file</p>
-</blockquote>
-</li>
-<li>git提交日志<blockquote>
-<p>git log<br>git log –pretty&#x3D;oneline 一行简洁显示</p>
-</blockquote>
-</li>
-<li>版本回退(HEAD代表当前版本，HEAD^代表上一个版本，更多的就是HEAD~100；commit id：版本号)<blockquote>
-<p>git reset –hard HEAD^  回退到上一版本<br>git reset –hard commit id 回退到该版本号的状态</p>
-</blockquote>
-</li>
-<li>提交命令记录<blockquote>
-<p>git reflog</p>
-</blockquote>
-</li>
-<li>工作区和版本库中最新版本的区别<blockquote>
-<p>git diff HEAD – readme.txt</p>
-</blockquote>
-</li>
-<li>丢弃工作区的修改<blockquote>
-<p>git checkout – file name</p>
-</blockquote>
-</li>
-<li>暂存区的修改内容撤销，重新放回工作区<blockquote>
-<p>git reset HEAD file name</p>
-</blockquote>
-</li>
-<li>git删除文件（也可以手动删除，再git add）<blockquote>
-<p>git rm file name</p>
-</blockquote>
-</li>
-<li>误删除文件还原（版本库中还有的话）<blockquote>
-<p>git checkout – test.txt (即丢弃工作区中的修改)</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="Git提交"><a href="#Git提交" class="headerlink" title="Git提交"></a>Git提交</h3><ol>
-<li>windows添加SSH-KEY<blockquote>
-<p>ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#x65;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#x75;&#x72;&#x65;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;</a>“</p>
-</blockquote>
-</li>
-<li>提交流程<blockquote>
-<p>git add (提交到暂存区：stage) &#x3D;&gt; git commit(将所有暂存区的内容提交到本地的当前分支)</p>
-</blockquote>
-</li>
-<li>添加远程库(origin 后面修改成你自己的仓库地址，修改后origin地址就指向你的远程仓库)<blockquote>
-<p>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>:michaelliao&#x2F;learngit.git</p>
-</blockquote>
-</li>
-<li>克隆远程仓库<blockquote>
-<p>git clone <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>:michaelliao&#x2F;gitskills.git</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="Git分支管理"><a href="#Git分支管理" class="headerlink" title="Git分支管理"></a>Git分支管理</h3><ol>
-<li>创建分支 (并切换到该分支)<blockquote>
-<p>git branch dev（创建分支）<br>git checkout -b dev  创建分支 (并切换到该分支)</p>
-</blockquote>
-</li>
-<li>切换分支<blockquote>
-<p>git checkout dev（切换分支）</p>
-</blockquote>
-</li>
-<li>查看分支<blockquote>
-<p>git branch</p>
-</blockquote>
-</li>
-<li>删除分支<blockquote>
-<p>git branch -d dev</p>
-</blockquote>
-</li>
-<li>合并分支<blockquote>
-<p>git checkout dev<br>git merge master<br>git merge –no-ff -m “merge with no-ff” dev （–no-ff在删除分支后不会丢失分支信息，fast forward 模式看不出曾经做过合并）</p>
-</blockquote>
-</li>
-<li>切换分支（新）<blockquote>
-<p>git switch -c dev (创建并切换到新分支)<br>git switch master (切换分支)</p>
-</blockquote>
-</li>
-</ol>
-<h4 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h4><ol>
-<li>新功能开发，最好拉一个feature分支，开发后删除</li>
-<li>需要强行删除，git branch -D feature-branch</li>
-</ol>
-<h3 id="Git-Bug分支管理"><a href="#Git-Bug分支管理" class="headerlink" title="Git Bug分支管理"></a>Git Bug分支管理</h3><ol>
-<li>隐藏工作区<blockquote>
-<p>git stash</p>
-</blockquote>
-</li>
-<li>隐藏的内容查看<blockquote>
-<p>git stash list</p>
-</blockquote>
-</li>
-<li>stash内容恢复<blockquote>
-<p>git stash apply (恢复后，stash内容不能删除，需要git stash drop删除)<br>git stash pop (恢复的同时，把stash内容也删除了)</p>
-</blockquote>
-</li>
-<li>复制一个特定的提交到当前分支：cherry-pick<blockquote>
-<p>在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。</p>
-</blockquote>
-</li>
-</ol>
-<h3 id="Git多人协作"><a href="#Git多人协作" class="headerlink" title="Git多人协作"></a>Git多人协作</h3><ol>
-<li>查看远程库信息<blockquote>
-<p>git remote (或者git remote -v 显示更加详细的信息)</p>
-</blockquote>
-</li>
-<li>推送分支<blockquote>
-<p>git push origin master</p>
-</blockquote>
-</li>
-<li>抓取远端分支<blockquote>
-<p>git pull origin branch</p>
-</blockquote>
-</li>
-<li>创建分支并关联远端<blockquote>
-<p>git checkout -b dev origin&#x2F;dev  (在本地创建和远程分支对应的分支)<br>git branch –set-upstream branch-name origin&#x2F;branch-name (关联远端分支)</p>
-</blockquote>
-</li>
-<li>rebase<blockquote>
-<p>git rebase (变基：开发很少用)<br>把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了<br>rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</p>
-</blockquote>
-</li>
-</ol>
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h1 class="collection-header">Git
+          <small>标签</small>
+        </h1>
+      </div>
 
       
+    <div class="collection-year">
+      <span class="collection-header">2023</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2023-03-05T10:00:21+08:00"
+              content="2023-03-05">
+          03-05
+        </time>
+      </div>
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
+      <div class="post-title">
+          <a class="post-title-link" href="/2023/03/05/git/" itemprop="url">
+            <span itemprop="name">Git</span>
+          </a>
+      </div>
+
       
-    </footer>
+    </header>
   </article>
-</div>
 
-
-
-
+    </div>
+  </div>
+  
+  
+  
 
 </div>
   </main>

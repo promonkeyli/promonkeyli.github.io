@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Git</title>
+    <url>/2023/03/05/git/</url>
+    <content><![CDATA[<h3 id="Git本地操作"><a href="#Git本地操作" class="headerlink" title="Git本地操作"></a>Git本地操作</h3><ol>
+<li>用户信息配置(–global：当前机器所有仓库都会使用该配置，也可以对某一个仓库单独指定)<blockquote>
+<p>git config –global user.name “Your Name”<br>git config –global1 user.email “<a href="mailto:&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;">&#x65;&#109;&#x61;&#x69;&#x6c;&#x40;&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#109;</a>“</p>
+</blockquote>
+</li>
+<li>仓库初始化<blockquote>
+<p>git init</p>
+</blockquote>
+</li>
+<li>提交<blockquote>
+<p>git add file<br>git commit -m “message”</p>
+</blockquote>
+</li>
+<li>提交文件状态查看<blockquote>
+<p>git status</p>
+</blockquote>
+</li>
+<li>提交文件修改的内容<blockquote>
+<p>git diff file</p>
+</blockquote>
+</li>
+<li>git提交日志<blockquote>
+<p>git log<br>git log –pretty&#x3D;oneline 一行简洁显示</p>
+</blockquote>
+</li>
+<li>版本回退(HEAD代表当前版本，HEAD^代表上一个版本，更多的就是HEAD~100；commit id：版本号)<blockquote>
+<p>git reset –hard HEAD^  回退到上一版本<br>git reset –hard commit id 回退到该版本号的状态</p>
+</blockquote>
+</li>
+<li>提交命令记录<blockquote>
+<p>git reflog</p>
+</blockquote>
+</li>
+<li>工作区和版本库中最新版本的区别<blockquote>
+<p>git diff HEAD – readme.txt</p>
+</blockquote>
+</li>
+<li>丢弃工作区的修改<blockquote>
+<p>git checkout – file name</p>
+</blockquote>
+</li>
+<li>暂存区的修改内容撤销，重新放回工作区<blockquote>
+<p>git reset HEAD file name</p>
+</blockquote>
+</li>
+<li>git删除文件（也可以手动删除，再git add）<blockquote>
+<p>git rm file name</p>
+</blockquote>
+</li>
+<li>误删除文件还原（版本库中还有的话）<blockquote>
+<p>git checkout – test.txt (即丢弃工作区中的修改)</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="Git提交"><a href="#Git提交" class="headerlink" title="Git提交"></a>Git提交</h3><ol>
+<li>windows添加SSH-KEY<blockquote>
+<p>ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#x65;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#x75;&#x72;&#x65;&#x6d;&#x61;&#105;&#x6c;&#64;&#101;&#120;&#97;&#109;&#x70;&#108;&#101;&#46;&#99;&#x6f;&#x6d;</a>“</p>
+</blockquote>
+</li>
+<li>提交流程<blockquote>
+<p>git add (提交到暂存区：stage) &#x3D;&gt; git commit(将所有暂存区的内容提交到本地的当前分支)</p>
+</blockquote>
+</li>
+<li>添加远程库(origin 后面修改成你自己的仓库地址，修改后origin地址就指向你的远程仓库)<blockquote>
+<p>git remote add origin <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>:michaelliao&#x2F;learngit.git</p>
+</blockquote>
+</li>
+<li>克隆远程仓库<blockquote>
+<p>git clone <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>:michaelliao&#x2F;gitskills.git</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="Git分支管理"><a href="#Git分支管理" class="headerlink" title="Git分支管理"></a>Git分支管理</h3><ol>
+<li>创建分支 (并切换到该分支)<blockquote>
+<p>git branch dev（创建分支）<br>git checkout -b dev  创建分支 (并切换到该分支)</p>
+</blockquote>
+</li>
+<li>切换分支<blockquote>
+<p>git checkout dev（切换分支）</p>
+</blockquote>
+</li>
+<li>查看分支<blockquote>
+<p>git branch</p>
+</blockquote>
+</li>
+<li>删除分支<blockquote>
+<p>git branch -d dev</p>
+</blockquote>
+</li>
+<li>合并分支<blockquote>
+<p>git checkout dev<br>git merge master<br>git merge –no-ff -m “merge with no-ff” dev （–no-ff在删除分支后不会丢失分支信息，fast forward 模式看不出曾经做过合并）</p>
+</blockquote>
+</li>
+<li>切换分支（新）<blockquote>
+<p>git switch -c dev (创建并切换到新分支)<br>git switch master (切换分支)</p>
+</blockquote>
+</li>
+</ol>
+<h4 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h4><ol>
+<li>新功能开发，最好拉一个feature分支，开发后删除</li>
+<li>需要强行删除，git branch -D feature-branch</li>
+</ol>
+<h3 id="Git-Bug分支管理"><a href="#Git-Bug分支管理" class="headerlink" title="Git Bug分支管理"></a>Git Bug分支管理</h3><ol>
+<li>隐藏工作区<blockquote>
+<p>git stash</p>
+</blockquote>
+</li>
+<li>隐藏的内容查看<blockquote>
+<p>git stash list</p>
+</blockquote>
+</li>
+<li>stash内容恢复<blockquote>
+<p>git stash apply (恢复后，stash内容不能删除，需要git stash drop删除)<br>git stash pop (恢复的同时，把stash内容也删除了)</p>
+</blockquote>
+</li>
+<li>复制一个特定的提交到当前分支：cherry-pick<blockquote>
+<p>在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="Git多人协作"><a href="#Git多人协作" class="headerlink" title="Git多人协作"></a>Git多人协作</h3><ol>
+<li>查看远程库信息<blockquote>
+<p>git remote (或者git remote -v 显示更加详细的信息)</p>
+</blockquote>
+</li>
+<li>推送分支<blockquote>
+<p>git push origin master</p>
+</blockquote>
+</li>
+<li>抓取远端分支<blockquote>
+<p>git pull origin branch</p>
+</blockquote>
+</li>
+<li>创建分支并关联远端<blockquote>
+<p>git checkout -b dev origin&#x2F;dev  (在本地创建和远程分支对应的分支)<br>git branch –set-upstream branch-name origin&#x2F;branch-name (关联远端分支)</p>
+</blockquote>
+</li>
+<li>rebase<blockquote>
+<p>git rebase (变基：开发很少用)<br>把分叉的提交历史“整理”成一条直线，看上去更直观。缺点是本地的分叉提交已经被修改过了<br>rebase的目的是使得我们在查看历史提交的变化时更容易，因为分叉的提交需要三方对比。</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+</search>
