@@ -25,3 +25,141 @@ menu:
 
 menu_settings:
   icons: true
+
+sidebar:
+#  position: left
+  position: right
+
+# avatar
+avatar:
+  url: /images/avatar.jpg
+  rounded: true
+  rotated: true
+
+site_state: true
+
+# social
+social:
+  GitHub: https://github.com/promonkeyli || fab fa-github
+  E-Mail: mailto:liyang_email@163.com || fa fa-envelope
+#  Weibo: https://weibo.com/yourname || fab fa-weibo
+#  Twitter: https://twitter.com/yourname || fab fa-twitter
+#  FB Page: https://www.facebook.com/yourname || fab fa-facebook
+#  StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+#  YouTube: https://youtube.com/yourname || fab fa-youtube
+#  Instagram: https://instagram.com/yourname || fab fa-instagram
+#  Skype: skype:yourname?call|chat || fab fa-skype
+
+links_settings:
+  icon: fa fa-globe
+toc:
+  enable: true
+
+# footer
+footer:
+  since: 2020
+
+# posts
+tag_icon: true
+post_navigation: left
+
+# preconnect
+preconnect: true
+theme_color:
+  light: "#222"
+  dark: "#222"
+
+codeblock:
+  # Code Highlight theme
+  # All available themes: https://theme-next.js.org/highlight/
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  prism:
+    light: prism
+    dark: prism-dark
+reading_progress:
+  enable: true
+  # Available values: left | right
+  start_at: left
+  # Available values: top | bottom
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 2px
+bookmark:
+  enable: false
+  # Customize the color of the bookmark.
+  color: "#222"
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
+  # If manual, only save it by clicking the bookmark-icon.
+  save: auto
+# Follow me on GitHub banner in right-top corner.
+github_banner:
+  enable: true
+  permalink: https://github.com/promonkeyli
+
+# font
+font:
+  # Use custom fonts families or not.
+  # Depended options: `external` and `family`.
+  enable: true
+
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
+  host:
+
+  # Font options:
+  # `external: true` will load this font family from `host` above.
+  # `family: Times New Roman`. Without any quotes.
+  # `size: x.x`. Use `em` as unit. Default: 1 (16px)
+
+  # Global font settings used for all elements inside <body>.
+  global:
+    external: true
+    family: Monda
+    size: 1
+
+  # Font settings for site title (.site-title).
+  title:
+    external: true
+    family: Lobster Two
+    size:
+
+  # Font settings for headlines (<h1> to <h6>).
+  headings:
+    external: true
+    family: Amita
+    size:
+
+  # Font settings for posts (.post-body).
+  posts:
+    external: true
+    family: Montserrat
+
+  # Font settings for <code> and code blocks.
+  codes:
+    external: true
+    family: PT Mono
+
+# search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+# Local search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false
+
+
+
