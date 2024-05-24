@@ -23,5 +23,5 @@ wget -qO- https://get.docker.com/ | sh
 ```
 #### 验证是否安装成功
 ```shell
-docker --v
+sudo docker run hello-world
 ```
