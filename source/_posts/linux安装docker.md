@@ -1,8 +1,9 @@
 ---
-title: linux安装docker
+title: ubuntu安装docker
 tags:
   - docker
   - linux
+  - ubuntu
 categories:
   - docker
 date: 2024-05-24 09:29:29
