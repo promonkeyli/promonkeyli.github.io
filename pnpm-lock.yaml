@@ -12,8 +12,8 @@ dependencies:
     specifier: ^7.0.0
     version: 7.2.0
   hexo-create-issues:
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: file:.yalc/hexo-create-issues
+    version: file:.yalc/hexo-create-issues
   hexo-generator-archive:
     specifier: ^2.0.0
     version: 2.0.0
@@ -766,15 +766,6 @@ packages:
       picocolors: 1.0.1
       resolve: 1.22.8
       tildify: 2.0.0
-
-  /hexo-create-issues@1.0.0:
-    resolution: {integrity: sha512-H9Y6Z6wZ+lV2Z3RNeIm2xohUkLDs94QcpUmtk6QfsQzvL0mGaWeOkYGZcST4/pP8bUWbrggyi6OmaWqacZ2QKQ==}
-    dependencies:
-      '@octokit/rest': 21.0.0
-      hexo: 7.2.0
-    transitivePeerDependencies:
-      - chokidar
-    dev: false
 
   /hexo-front-matter@4.2.1:
     resolution: {integrity: sha512-sJJI0GNmejYiwBvgnGRKn5V3sbODB4dNPr8jyw2Qp0PRHr4Uuyv8iyxw6WfK3+T7yvzYvJOh+tZ7jnwr2BYARA==}
@@ -1777,4 +1768,14 @@ packages:
 
   /xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
+    dev: false
+
+  file:.yalc/hexo-create-issues:
+    resolution: {directory: .yalc/hexo-create-issues, type: directory}
+    name: hexo-create-issues
+    dependencies:
+      '@octokit/rest': 21.0.0
+      hexo: 7.2.0
+    transitivePeerDependencies:
+      - chokidar
     dev: false
