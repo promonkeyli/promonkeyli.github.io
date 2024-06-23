@@ -6,3 +6,7 @@ public/
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# link
+.yalc
+yalc.lock
