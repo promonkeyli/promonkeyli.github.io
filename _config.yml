@@ -107,6 +107,6 @@ deploy:
 
 # hexo-create-issues plugins create gitalk issues config
 gitalk_create_issues:
-  token: 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
+  token:
   username: promonkeyli
   repo: promonkeyli.github.io

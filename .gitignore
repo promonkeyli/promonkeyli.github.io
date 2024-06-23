@@ -10,3 +10,6 @@ public/
 # link
 .yalc
 yalc.lock
+
+#env
+.env
