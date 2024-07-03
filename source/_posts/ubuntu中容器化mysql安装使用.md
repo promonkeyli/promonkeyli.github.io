@@ -12,7 +12,7 @@ date: 2024-07-02 22:48:03
 
 ### Dockerfile编写
 
-1. 随便新建一个文件夹(比如是：mysql文件见)，使用`vim Dockerfile`并添加下面的内容
+1. 随便新建一个文件夹(比如是：mysql文件夹)，使用`vim Dockerfile`并添加下面的内容
 
 ```dockerfile
 # 使用官方MySQL 8.0镜像作为基础镜像
