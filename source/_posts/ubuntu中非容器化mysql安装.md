@@ -25,7 +25,7 @@ sudo apt install mysql-server
 sudo systemctl status mysql
 ```
 
-### mysql安全加强
+### 运行安全安装脚本
 
 MySQL 安装文件附带了一个名为`mysql_secure_installation`的脚本，它允许你很容易地提高数据库服务器的安全性。
 
@@ -53,4 +53,12 @@ Do you wish to continue with the password provided?(Press y|Y for Yes, any other
 ```
 
 下一步，你将被要求移除任何匿名用户，限制 root 用户访问本地机器，移除测试数据库并且重新加载权限表。你应该对所有的问题回答`y`。
+
+### 登录mysql
+
+密码是运行安全安装脚本时设置的密码
+
+```shell
+sudo mysql -u root -p
+```
 
