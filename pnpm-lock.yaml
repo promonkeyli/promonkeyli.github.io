@@ -13,10 +13,10 @@ importers:
         version: 3.0.0
       hexo:
         specifier: ^7.0.0
-        version: 7.2.0
+        version: 7.2.0(chokidar@3.6.0)
       hexo-create-issues:
         specifier: ^1.0.1
-        version: 1.0.1
+        version: 1.0.1(chokidar@3.6.0)
       hexo-generator-archive:
         specifier: ^2.0.0
         version: 2.0.0
@@ -28,7 +28,7 @@ importers:
         version: 3.0.0
       hexo-generator-searchdb:
         specifier: ^1.4.1
-        version: 1.4.1
+        version: 1.4.1(chokidar@3.6.0)
       hexo-generator-tag:
         specifier: ^2.0.0
         version: 2.0.0
@@ -48,8 +48,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       hexo-theme-next:
-        specifier: ^8.20.0
-        version: 8.20.0
+        specifier: ^8.21.0
+        version: 8.21.0
       hexo-util:
         specifier: ^3.3.0
         version: 3.3.0
@@ -59,7 +59,7 @@ importers:
     devDependencies:
       hexo-related-posts:
         specifier: ^1.5.2
-        version: 1.5.2(chalk@4.1.2)(hexo@7.2.0)
+        version: 1.5.2(chalk@4.1.2)(hexo@7.2.0(chokidar@3.6.0))
 
 packages:
 
@@ -556,8 +556,8 @@ packages:
   hexo-theme-landscape@1.0.0:
     resolution: {integrity: sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==}
 
-  hexo-theme-next@8.20.0:
-    resolution: {integrity: sha512-cLKE32mP6B2E84+4XUXOgZhaI+srndHAviVpDaz8S7fj4OTnRchWg1anbhpZTFAgMO0NSRs4A0kT61eXY3l/Gg==}
+  hexo-theme-next@8.21.0:
+    resolution: {integrity: sha512-O0xKsX73QJSOfPs8R+Kd1sFbJQhy0Od3NsoN5uR717IXjK4xn2w9x+GlSijEfh96JkhCIQOOPS5xBtzsfpjE6A==}
 
   hexo-util@3.3.0:
     resolution: {integrity: sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q==}
@@ -1506,10 +1506,10 @@ snapshots:
       resolve: 1.22.8
       tildify: 2.0.0
 
-  hexo-create-issues@1.0.1:
+  hexo-create-issues@1.0.1(chokidar@3.6.0):
     dependencies:
       '@octokit/rest': 21.0.0
-      hexo: 7.2.0
+      hexo: 7.2.0(chokidar@3.6.0)
     transitivePeerDependencies:
       - chokidar
 
@@ -1536,9 +1536,9 @@ snapshots:
     dependencies:
       hexo-pagination: 3.0.0
 
-  hexo-generator-searchdb@1.4.1:
+  hexo-generator-searchdb@1.4.1(chokidar@3.6.0):
     dependencies:
-      nunjucks: 3.2.4
+      nunjucks: 3.2.4(chokidar@3.6.0)
     transitivePeerDependencies:
       - chokidar
 
@@ -1556,10 +1556,10 @@ snapshots:
 
   hexo-pagination@3.0.0: {}
 
-  hexo-related-posts@1.5.2(chalk@4.1.2)(hexo@7.2.0):
+  hexo-related-posts@1.5.2(chalk@4.1.2)(hexo@7.2.0(chokidar@3.6.0)):
     dependencies:
       chalk: 4.1.2
-      hexo: 7.2.0
+      hexo: 7.2.0(chokidar@3.6.0)
       natural: 2.4.5
 
   hexo-renderer-ejs@2.0.0:
@@ -1600,7 +1600,7 @@ snapshots:
 
   hexo-theme-landscape@1.0.0: {}
 
-  hexo-theme-next@8.20.0: {}
+  hexo-theme-next@8.21.0: {}
 
   hexo-util@3.3.0:
     dependencies:
@@ -1612,7 +1612,7 @@ snapshots:
       prismjs: 1.29.0
       strip-indent: 3.0.0
 
-  hexo@7.2.0:
+  hexo@7.2.0(chokidar@3.6.0):
     dependencies:
       abbrev: 2.0.0
       archy: 1.0.0
@@ -1629,7 +1629,7 @@ snapshots:
       moize: 6.1.6
       moment: 2.30.1
       moment-timezone: 0.5.45
-      nunjucks: 3.2.4
+      nunjucks: 3.2.4(chokidar@3.6.0)
       picocolors: 1.0.1
       pretty-hrtime: 1.0.3
       resolve: 1.22.8
@@ -1862,11 +1862,13 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  nunjucks@3.2.4:
+  nunjucks@3.2.4(chokidar@3.6.0):
     dependencies:
       a-sync-waterfall: 1.0.1
       asap: 2.0.6
       commander: 5.1.0
+    optionalDependencies:
+      chokidar: 3.6.0
 
   nwsapi@2.2.10: {}
 
